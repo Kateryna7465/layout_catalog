@@ -1,0 +1,28 @@
+:root {
+  --blue: #00acdc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  margin-right: 40px;
+  display: block;
+}
