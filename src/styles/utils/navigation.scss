@@ -1,41 +1,46 @@
-@use './variables' as *;
+@use '.utils/variables' as vars;
 
 .nav {
   display: flex;
   list-style: none;
   height: 60px;
 
-  &_link {
-    display: flex;
+  &__link {
+    display: block;
     text-decoration: none;
     color: #060b35;
     transition: 300ms ease;
     text-transform: uppercase;
     font-size: 12px;
+    font-weight: 500;
+    line-height: 60px;
     text-align: center;
     position: relative;
     justify-content: center;
-    line-height: 60px;
   }
 
-  &-item:not(:first-child) {
+  &__item:not(:first-child) {
     margin-left: 20px;
   }
 
-  &-list {
+  &__list {
     display: flex;
     margin-right: 0;
     padding: 0;
     justify-content: space-between;
+    list-style: none;
   }
 
-  &_link:hover {
-    color: $blue-accent-color;
+  &__link:hover {
+    color: vars.$blue-accent-color;
+  }
+  &__link--active {
+    color: vars.$blue-accent-color;
   }
 }
 
 .is-active {
-  color: $blue-accent-color;
+  color: vars.$blue-accent-color;
   position: relative;
   align-items: center;
 }
@@ -43,7 +48,7 @@
 .is-active::after {
   content: '';
   position: absolute;
-  background-color: $blue-accent-color;
+  background-color: vars.$blue-accent-color;
   bottom: 0;
   left: 0;
   height: 4px;
