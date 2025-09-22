@@ -30,12 +30,12 @@
   }
 
   &_link:hover {
-    color: var(--blue);
+    color: $blue-accent-color;
   }
 }
 
 .is-active {
-  color: var(--blue);
+  color: $blue-accent-color;
   position: relative;
   align-items: center;
 }
@@ -43,7 +43,7 @@
 .is-active::after {
   content: '';
   position: absolute;
-  background-color: var(--blue);
+  background-color: $blue-accent-color;
   bottom: 0;
   left: 0;
   height: 4px;
